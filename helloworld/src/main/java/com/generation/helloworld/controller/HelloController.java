@@ -14,10 +14,26 @@ public class HelloController {
 		
 	}
 	
-	@GetMapping("/nome")   //endereço sempre minusculo
+	@GetMapping("/nome")   //endereço sempre minusculo e sempre especificar pois se tiver + q 1 ele nao vai saber qual mandar
 	public String meunome() {   
 		return "<b>Hello! <br />Bruno</b>";  
 		
 	}
+
 	
+	
+	@GetMapping("/bsmdageneration")  
+	public String listadebsms() {   
+		return "<b>Comunicação <br/ > <b>Proatividade<br /> <b>Critividade<br />";  
+	
+	}
+	
+	@GetMapping("/objetivoapremdizagemsmn")  
+	public String listaobjetivos() {   
+		return "<b>Dominar Spring <br/ > <b>Dominar MYSQL<br /> <b>Dominar Insomnia<br />  <b>Dominar bloco 1 e 2<br />  ";  
+	
+	}
+	
+
 }
+
