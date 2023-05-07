@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController  //indicando que e uma classe controladora
-@RequestMapping("/Hello")   // dizendo que o endereço sera / hello
+@RequestMapping("/hello")   // dizendo que o endereço sera / hello
 public class HelloController {
 
 	@GetMapping
@@ -16,7 +16,7 @@ public class HelloController {
 	
 	@GetMapping("/nome")   //endereço sempre minusculo e sempre especificar pois se tiver + q 1 ele nao vai saber qual mandar
 	public String meunome() {   
-		return "<b>Hello! <br />Bruno</b>";  
+		return " <br/> Meu Nome É Bruno !</b>";  
 		
 	}
 
